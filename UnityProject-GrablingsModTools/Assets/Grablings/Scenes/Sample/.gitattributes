@@ -1,0 +1,4 @@
+# The sample scene ships as plain git objects, so undo the LFS routing the root
+# .gitattributes applies to .png/.exr and friends. `!` leaves the attribute
+# unspecified, which is what keeps the lfs filter from running at all.
+* !filter !diff !merge !text
